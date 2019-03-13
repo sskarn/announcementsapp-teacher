@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+	<title>NPSS Announcements Creator</title>
+	<script src="scripts/scripts.js"></script>
+</head>
+
+<body>
+    <h1>Create Your Announcement:</h1>
+    <h2>Title:</h2>
+	<input type="text" placeholder="Announcement Title" id="title">
+    <h2>Details:</h2>
+	<input type="text" placeholder="Announcement Details" id="details">
+    <h2>Grade:</h2>
+	<select id="grade">
+		<option value="9">9
+		<option value="10">10
+		<option value="11">11
+		<option value="12">12
+		<option value="allgrades">All</option>
+	</select>
+    <h2>Gender:</h2>
+	<select id="gender">
+		<option value="male">Male</option>
+		<option value="female">Female</option>
+		<option value="allgenders">All</option>
+	</select>
+    <h2>Club:</h2>
+	<select id="clubs">
+		<option value="DECA">DECA</option>
+		<option value="Abstract">Abstract</option>
+		<option value="Stage Crew">Stage Crew</option>
+		<option value="Link Crew">Link Crew</option>
+		<option value="YES4MH">YES4MH</option>
+		<option value="HOSA">HOSA</option>
+		<option value="allstudents">All</option>
+	</select> <br>
+	<input type="submit" onclick ="getData()" id="submit">
+</body>
+</html>
