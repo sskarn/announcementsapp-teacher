@@ -1,0 +1,14 @@
+body{
+    background-color: #183689
+}
+
+h1, div{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: #FFFFFF
+}
+
+#submit{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold
+}
