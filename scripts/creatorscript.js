@@ -10,7 +10,7 @@ annDetails = document.getElementById("details").value;
 annGrade = document.getElementById("grade").value;
 annGender = document.getElementById("gender").value;
 annClub = document.getElementById("club").value;
-alert(annTitle + annDetails + annGrade + annGender + annClub);
+// alert(annTitle + annDetails + annGrade + annGender + annClub);
 localStorage.setItem("Title:", annTitle);
 localStorage.setItem("Details:", annDetails);
 localStorage.setItem("Grade:", annGrade);
