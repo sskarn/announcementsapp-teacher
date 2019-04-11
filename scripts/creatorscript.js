@@ -3,15 +3,15 @@ var annDetails = [];
 var annGrade = [];
 var annGender = [];
 var annClub = [];
-var i = 0;
+var index = 0;
 
 function getData() {
-	annTitle[i] = document.getElementById("title").value;
-	annDetails[i] = document.getElementById("details").value;
-	annGrade[i] = document.getElementById("grade").value;
-	annGender[i] = document.getElementById("gender").value;
-	annClub[i] = document.getElementById("club").value;
-	i += 1;
+	annTitle[index] = document.getElementById("title").value;
+	annDetails[index] = document.getElementById("details").value;
+	annGrade[index] = document.getElementById("grade").value;
+	annGender[index] = document.getElementById("gender").value;
+	annClub[index] = document.getElementById("club").value;
+	index += 1;
 	// alert(annTitle + annDetails + annGrade + annGender + annClub);
 	localStorage.setItem("Title:", JSON.stringify(annTitle));
 	localStorage.setItem("Details:", JSON.stringify(annDetails));
