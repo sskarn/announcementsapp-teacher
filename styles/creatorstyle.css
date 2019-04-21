@@ -65,7 +65,7 @@ h2{
   opacity: 1;
 }
 
-input, select, #submit{
+input, select, #submit, button{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
