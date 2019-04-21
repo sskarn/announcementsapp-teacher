@@ -7,3 +7,6 @@ Additional Features (may be added):
 
 Added:
 1. Stamp Current Date/Time Into Announcement
+
+Fixed:
+1. Announcements Being Overwritten on Refresh
