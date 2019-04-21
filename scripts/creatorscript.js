@@ -41,9 +41,11 @@ function createAnn() {
         index += 1;
         getAnnInfo();
         storeAnn();
+        alert("Your announcement has been posted.");
     } else {
         getAnnInfo();
         storeAnn();
+        alert("Your announcement has been posted.");
     }
 }
 
