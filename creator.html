@@ -9,15 +9,11 @@
 <body>
 	<img src="images/NPSSLogo.png">
     <h1>Create Your Announcement:</h1>
-    <div>
+    <div id="announcementcreator">
         <h2>Title:</h2>
         <input type="text" id="title">
-    </div>
-    <div>
         <h2>Details:</h2>
         <input type="text" id="details">
-    </div>
-    <div>
         <h2>Grade:</h2>
         <select id="grade">
             <option hidden disabled selected value></option>
@@ -27,8 +23,6 @@
             <option value="12">12
             <option value="allgrades">All</option>
         </select>
-    </div>
-    <div>
         <h2>Gender:</h2>
         <select id="gender">
             <option hidden disabled selected value></option>
@@ -36,22 +30,38 @@
             <option value="Female">Female</option>
             <option value="allgenders">All</option>
         </select>
-    </div>
-    <div>
         <h2>Club:</h2>
         <select id="club">
-            <option hidden disabled selected value></option>
-            <option value="DECA">DECA</option>
-            <option value="Abstract">Abstract</option>
-            <option value="Stage Crew">Stage Crew</option>
-            <option value="Link Crew">Link Crew</option>
-            <option value="YES4MH">YES4MH</option>
-            <option value="HOSA">HOSA</option>
+            <option selected value></option>
+			<optgroup label="Academics">
+				<option value="DECA">DECA</option>
+				<option value="HOSA">HOSA</option>
+			<optgroup label="Arts">
+				<option value="Abstract">Abstract Singers</option>
+				<option value="Arts Council">Arts Council</option>
+				<option value="Concert Band">Concert Band</option>
+			</optgroup>
+			<optgroup label="Improvers">
+				<option value="Link Crew">Link Crew</option>
+				<option value="Stage Crew">Stage Crew</option>
+				<option value="YES4MH">YES4MH</option>
+			</optgroup>
+			<optgroup label="Sports">
+				<option value="Ultimate">Ultimate</option>
+				<option value="Volleyball Club">Volleyball Club</option>
+			</optgroup>
             <option value="allstudents">All</option>
         </select>
-    </div>
+		<br>
+		<div class="tooltip">
+			<h2>Student Number (Optional):</h2>
+			<span class="tooltiptext">Select the Student's Grade and Gender, but Leave the Club Blank.</span>
+		</div>
+		<br>
+		<input type="number" id="student#" min="100000" max="999999">
+	</div>
     <br><br>
-    <div>
+    <div id="submitannouncement">
         <input type="submit" onclick ="createAnn()" id="submit" value="Submit Announcement">
     </div>    
 </body>

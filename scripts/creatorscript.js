@@ -4,6 +4,7 @@ var annGrade = [];
 var annGender = [];
 var annClub = [];
 var annDateTime = [];
+var annStudentNumber = [];
 var index = 0;
 
 function getAnnInfo() {
@@ -12,26 +13,29 @@ function getAnnInfo() {
     annGrade[index] = document.getElementById("grade").value;
     annGender[index] = document.getElementById("gender").value;
     annClub[index] = document.getElementById("club").value;
+	annStudentNumber[index] = document.getElementById("student#").value;
     annDateTime[index] = new Date().toLocaleString();
 }
 
 function storeAnn() {
     localStorage.setItem("AnnCount:", index);
-    localStorage.setItem("Title:", JSON.stringify(annTitle));
-    localStorage.setItem("Details:", JSON.stringify(annDetails));
-    localStorage.setItem("Grade:", JSON.stringify(annGrade));
-    localStorage.setItem("Gender:", JSON.stringify(annGender));
-    localStorage.setItem("Club:", JSON.stringify(annClub));
-    localStorage.setItem("DateTime:", JSON.stringify(annDateTime));
+    localStorage.setItem("AnnTitle:", JSON.stringify(annTitle));
+    localStorage.setItem("AnnDetails:", JSON.stringify(annDetails));
+    localStorage.setItem("AnnGrade:", JSON.stringify(annGrade));
+    localStorage.setItem("AnnGender:", JSON.stringify(annGender));
+    localStorage.setItem("AnnClub:", JSON.stringify(annClub));
+	localStorage.setItem("AnnStudentNumber:", JSON.stringify(annStudentNumber));
+    localStorage.setItem("AnnDateTime:", JSON.stringify(annDateTime));
 }
 
 function retrieveAnn() {
-    annTitle = JSON.parse(localStorage.getItem("Title:"));
-    annDetails = JSON.parse(localStorage.getItem("Details:"));
-    annGrade = JSON.parse(localStorage.getItem("Grade:"));
-    annGender = JSON.parse(localStorage.getItem("Gender:"));
-    annClub = JSON.parse(localStorage.getItem("Club:"));
-    annDateTime = JSON.parse(localStorage.getItem("DateTime:"));
+    annTitle = JSON.parse(localStorage.getItem("AnnTitle:"));
+    annDetails = JSON.parse(localStorage.getItem("AnnDetails:"));
+    annGrade = JSON.parse(localStorage.getItem("AnnGrade:"));
+    annGender = JSON.parse(localStorage.getItem("AnnGender:"));
+    annClub = JSON.parse(localStorage.getItem("AnnClub:"));
+	annStudentNumber = JSON.parse(localStorage.getItem("AnnStudentNumber:"));
+    annDateTime = JSON.parse(localStorage.getItem("AnnDateTime:"));
 }
 
 function createAnn() {
