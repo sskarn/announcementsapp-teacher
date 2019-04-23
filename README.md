@@ -3,6 +3,7 @@ Grade 11 ICS Assignment
 
 Additional Features (may be added):
 1. Target Multiple Grades (HTML/JS)
+2. Add Comments: Name, Course Code, Date, Description (top of JS, top of function)
 
 Added:
 1. Stamp Current Date/Time Into Announcement (JS)
