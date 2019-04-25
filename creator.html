@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html> 
+<html>
+
 <head>
-    <title>NPSS Announcements Creator</title>
-    <script src="scripts/creatorscript.js"></script>
-    <link rel="stylesheet" href="styles/creatorstyle.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	<title>NPSS Announcements Creator</title>
+	<script src="scripts/creatorscript.js"></script>
+	<link rel="stylesheet" href="styles/creatorstyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 </head>
+
 <body>
 	<img src="images/NPSSLogo.png">
-    <h1>Create Your Announcement:</h1>
-    <div id="announcementcreator">
-        <h2>Title:</h2>
-        <input type="text" id="title">
-        <h2>Details:</h2>
-        <input type="text" id="details">
-        <h2>Grade:</h2>
-        <select id="grade">
-            <option hidden disabled selected value></option>
-            <option value="9">9
-            <option value="10">10
-            <option value="11">11
-            <option value="12">12
-            <option value="allgrades">All</option>
-        </select>
-        <h2>Gender:</h2>
-        <select id="gender">
-            <option hidden disabled selected value></option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="allgenders">All</option>
-        </select>
-        <h2>Club:</h2>
-        <select id="club">
-            <option selected value></option>
+	<h1>Create Your Announcement:</h1>
+	<div id="announcementcreator">
+		<h2>Title:</h2>
+		<input type="text" id="title">
+		<h2>Details:</h2>
+		<input type="text" id="details">
+		<h2>Grade:</h2>
+		<select id="grade">
+			<option hidden disabled selected value></option>
+			<option value="9">9
+			<option value="10">10
+			<option value="11">11
+			<option value="12">12
+			<option value="allgrades">All</option>
+		</select>
+		<h2>Gender:</h2>
+		<select id="gender">
+			<option hidden disabled selected value></option>
+			<option value="Male">Male</option>
+			<option value="Female">Female</option>
+			<option value="allgenders">All</option>
+		</select>
+		<h2>Club:</h2>
+		<select id="club">
+			<option selected value></option>
 			<optgroup label="Academics">
 				<option value="DECA">DECA</option>
 				<option value="HOSA">HOSA</option>
@@ -50,8 +52,8 @@
 				<option value="Ultimate">Ultimate</option>
 				<option value="Volleyball Club">Volleyball Club</option>
 			</optgroup>
-            <option value="allstudents">All</option>
-        </select>
+			<option value="allstudents">All</option>
+		</select>
 		<br>
 		<div class="tooltip">
 			<h2>Student Number (Optional):</h2>
@@ -60,13 +62,14 @@
 		<br>
 		<input type="number" id="student#" min="100000" max="999999">
 	</div>
-    <br><br>
-    <div id="submitannouncement">
-        <input type="submit" onclick ="createAnn()" id="submit" value="Submit Announcement">
-    </div>
+	<br><br>
+	<div id="submitannouncement">
+		<input type="submit" onclick="createAnn()" id="submit" value="Submit Announcement">
+	</div>
 	<br>
 	<div id="logout">
 		<a href="login.html"><button>Log Out</button></a>
 	</div>
 </body>
+
 </html>
