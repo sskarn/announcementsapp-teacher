@@ -1,14 +1,25 @@
+/* Karnbir Saini */
+/* ICS3UR-B */
+/* April 25, 2019 */
+/* Teacher Announcement Creator Login Page CSS */
+
 body {
 	background-color: #903A8F;
+	/* set webpage background colour to purple */
 	text-align: center;
+	/* all text is center-aligned */
 	font-family: 'Roboto Slab', sans-serif;
+	/* all text is in font Roboto Slab or sans-serif in case of failure to load font */
 }
 
 input {
 	font-family: 'Roboto Slab', sans-serif;
-	font-weight: bold
+	/* requires extra CSS to set font (doesn't work with just body CSS) */
+	font-weight: bold;
+	/* button text is bolded */
 }
 
 a {
 	color: white;
+	/* login link added by JS is white for visibility */
 }

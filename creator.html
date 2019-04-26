@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
+<!--
+Karnbir Saini
+ICS3UR-B
+April 25, 2019
+Teacher Announcement Creator HTML
+https://github.com/sskarn/announcementsapp-teacher
+-->
 
 <head>
+	<!-- title for browser toolbar/tab, JavaScript source reference, CSS stylesheet reference, Roboto font reference for CSS -->
 	<title>NPSS Announcements Creator</title>
 	<script src="scripts/creatorscript.js"></script>
 	<link rel="stylesheet" href="styles/creatorstyle.css">
@@ -12,6 +20,7 @@
 	<img src="images/NPSSLogo.png">
 	<h1>Create Your Announcement:</h1>
 	<div id="announcementcreator">
+		<!-- Teacher can select announcement title, details, grade, gender, club, and even student number to target a specific student (club must be blank for this to work) -->
 		<h2>Title:</h2>
 		<input type="text" id="title">
 		<h2>Details:</h2>
@@ -19,6 +28,7 @@
 		<h2>Grade:</h2>
 		<select id="grade">
 			<option hidden disabled selected value></option>
+			<!-- hidden, disabled, and selected causes the dropdown to preselect a unselectable, disabled, blank option when the page is loaded for cleanliness and ease of use -->
 			<option value="9">9
 			<option value="10">10
 			<option value="11">11
@@ -34,6 +44,7 @@
 		</select>
 		<h2>Club:</h2>
 		<select id="club">
+			<!-- optgroups allow for dropdown to be organized -->
 			<option selected value></option>
 			<optgroup label="Academics">
 				<option value="DECA">DECA</option>
@@ -56,6 +67,7 @@
 		</select>
 		<br>
 		<div class="tooltip">
+			<!-- Tooltip to assist teacher in how to use functionality -->
 			<h2>Student Number (Optional):</h2>
 			<span class="tooltiptext">Select the Student's Grade and Gender, but Leave the Club Blank.</span>
 		</div>
@@ -64,10 +76,12 @@
 	</div>
 	<br><br>
 	<div id="submitannouncement">
+		<!-- submit button runs function createAnn() in JS -->
 		<input type="submit" onclick="createAnn()" id="submit" value="Submit Announcement">
 	</div>
 	<br>
 	<div id="logout">
+		<!-- button link to login page -->
 		<a href="login.html"><button>Log Out</button></a>
 	</div>
 </body>

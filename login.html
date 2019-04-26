@@ -1,7 +1,15 @@
 <!doctype HTML>
 <html>
+<!--
+Karnbir Saini
+ICS3UR-B
+April 25, 2019
+Teacher Announcement Creator Login Page HTML
+https://github.com/sskarn/announcementsapp-teacher
+-->
 
 <head>
+	<!-- title for browser toolbar/tab, JavaScript source reference, CSS stylesheet reference, Roboto font reference for CSS -->
 	<title>NPSS Announcements Creator Login</title>
 	<link rel=stylesheet href="styles/loginstyle.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -11,6 +19,7 @@
 <body>
 	<h1>Welcome!</h1>
 	<h2>Please Login Below:</h2>
+	<!-- Teacher inputs password "NPSS" to login (just for proof of concept). If password is correct after submit button is pressed, a link is added in the "login" div using JS -->
 	Password:<input type="password" name="Password" id="password">
 	<br><br>
 	<input type="button" name="submit" value="Submit" onclick="passwordCheck()">

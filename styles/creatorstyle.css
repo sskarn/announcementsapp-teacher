@@ -1,22 +1,46 @@
+/* Karnbir Saini */
+/* ICS3UR-B */
+/* April 25, 2019 */
+/* Teacher Announcement Creator CSS */
+
 body {
 	background-color: #183689;
+	/* set webpage background colour to purple */
 	text-align: center;
+	/* all text is center-aligned */
 	font-family: 'Roboto', sans-serif;
+	/* all text is in font Roboto Slab or sans-serif in case of failure to load font */
 }
 
 img {
 	max-width: 15%;
+	/* sets NPSS logo image to 15% of its pixel width */
 	height: auto;
+	/* allows for aspect ratio to be maintained */
 }
 
 h1 {
 	color: #FFFFFF;
+	/* sets text colour to white */
 }
 
 h2 {
 	color: #FFFFFF;
+	/* sets text colour to white */
 	margin-bottom: 0px;
+	/* allows for tooltip dots to be properly displayed under text */
 }
+
+input,
+select,
+#submit,
+button {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	/* requires extra CSS to set font (doesn't work with just body CSS) + text is bolded */
+}
+
+/* Tooltip retrieved from W3Schools: https://www.w3schools.com/css/css_tooltip.asp */
 
 /* Tooltip container */
 .tooltip {
@@ -64,12 +88,4 @@ h2 {
 .tooltip:hover .tooltiptext {
 	visibility: visible;
 	opacity: 1;
-}
-
-input,
-select,
-#submit,
-button {
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
 }
