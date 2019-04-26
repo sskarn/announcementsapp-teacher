@@ -12,7 +12,7 @@ var login = "";
 // create login variable as a string
 
 /*
-function passwordCheck()
+function passwordCheck() (onClick when login button is clicked in HTML)
 - sets password var to value from HTML password input
 - if statement tests for input of "NPSS" and if true:
 	- login variable gets set to <a> tag which links to creator.html

@@ -69,7 +69,7 @@ function storeAnn() {
 }
 
 /*
-function createAnn()
+function createAnn() (onClick when submit button is clicked in HTML)
 - if statement tests for existence of LocalStorage key of AnnCount and if true:
 	- index is retrieved from the AnnCount key
 	- retrieveAnn() function is ran
