@@ -74,10 +74,10 @@ function createAnn()
 	- index is retrieved from the AnnCount key
 	- retrieveAnn() function is ran
 	- index is incremented up by 1 to allow for the creation of a new announcement without overwrite
-	- getAnnInfo() and storeAnn() functions are ran
+	- getAnnInfo() and storeAnn() functions are ran in order
 	- alert is shown to teacher confirming that the announcement they created has been posted
 - else statement runs when if is false:
-	- getAnnInfo() and storeAnn() functions are ran
+	- getAnnInfo() and storeAnn() functions are ran in order
 	- alert is shown to teacher confirming that the announcement they created has been posted
 	Note:
 		else statement is only used when there are no past announcements.
