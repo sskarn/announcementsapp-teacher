@@ -2,7 +2,7 @@
 Karnbir Saini
 ICS3UR-B
 April 25, 2019
-Teacher Announcement Creator Login Page JS
+Teacher Announcement Creator Login Page JS - proof of concept login page
 https://github.com/sskarn/announcementsapp-teacher
 */
 
